@@ -1,15 +1,42 @@
-# Smooth Particle Animation with GPGPU and Poisson Sampling
+# ASCII WebGPU
 
-A simple demonstration of how to create a smooth particle animation using GPGPU and Poisson Sampling.
+This project is an ASCII art renderer utilizing Three.js with WebGPU support. It converts images into ASCII representations, rendering them in a 3D space.
 
-![Poisson Disk Sampling](https://storage.googleapis.com/rz_github_images/poisson.png)
+## Prerequisites
 
-## Overview
-
-The particles are generated using Poisson Sampling and are animated using GPGPU. The particles are rendered using a simple shader that renders the particles as circles. The project is inspired by the particle animations seen in [Digital Design Days](https://ddd.live/) by [Lusion Studio](https://lusion.co/).
+- **Bun**: Ensure [Bun](https://bun.sh/) is installed on your system.
 
 ## Features
 
-- Poisson Disk Sampling for particle generation
-- GPGPU for particle animation
-- Curl Noise for particle movement
+- WebGPU Rendering: Leverages Three.js’s WebGPURenderer for efficient rendering.
+- ASCII Art Generation: Transforms images into ASCII art using custom shaders.
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ryanzola/ascii-webgpu.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd ascii-webgpu
+```
+
+Install the dependencies:
+
+```bash
+bun install
+```
+
+## Usage
+
+Start the development server:
+
+```bash
+bun run dev
+```
+
+Open the browser and navigate to `http://localhost:3000`.
